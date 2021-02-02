@@ -1,0 +1,42 @@
+public class PCOOP {
+
+    public boolean wifi;
+    //Turn On 
+    public void pcOn(){
+        boolean rgb = true;
+        if(rgb == true){
+            System.out.println("RGB is ON");
+        }
+        boolean fans = true;
+         if(fans == true){
+            System.out.println("Fans are ON");
+        }
+        wifi = true;
+         if(wifi == true){
+            System.out.println("WiFi is ON");
+        }
+        
+    }
+    public void pcOff(){
+        boolean rgb = false;
+         if(rgb == false){
+            System.out.println("RGB is OFF");
+        }
+        boolean fans = false;
+         if(fans == false){
+            System.out.println("Fans are Off");
+        }
+        wifi = false;
+         if(wifi == false){
+            System.out.println("WiFi is Off");
+        }
+    }
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+      PCOOP user = new PCOOP();
+      user.pcOff();
+      
+    }
+    
+}
